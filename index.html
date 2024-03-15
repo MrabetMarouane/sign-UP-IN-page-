@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="utilisateur">
+        <label for="utilisateur">Ajouter un utilisateur </label>
+      </div>
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Adresse e-mail..."
+        />
+      </div>
+      <!-- Mot de passe -->
+      <div class="pass">
+        <label for="password">Mot de passe</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Mot de passe..."
+        />
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signUp()">Sign Up</button>
+      <!-- Sign In option -->
+      <p>Vous avez déjà un compte ?</p>
+      <span><a href="signIn.html">Se connecter</a></span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

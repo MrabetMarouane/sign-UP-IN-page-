@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="connexion">
+        <label for="connexion">Se connecter </label>
+      </div>
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Adresse e-mail..."
+        />
+      </div>
+      <!-- passWord -->
+      <div class="pass">
+        <label for="password">Mot de passe</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Mot de passe..."
+        />
+      </div>
+            <div id="error-message" style="color: red;"></div>
+
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signIn()">Se connecter</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
